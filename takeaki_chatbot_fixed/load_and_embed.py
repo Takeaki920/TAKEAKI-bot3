@@ -4,7 +4,7 @@ from langchain_core.documents import Document
 from langchain.text_splitter import CharacterTextSplitter
 
 def load_vectorstore():
-    with open("book.txt", "r", encoding="utf-8") as f:
+    with open("takeaki_chatbot_fixed/book.txt", "r", encoding="utf-8") as f:
         text = f.read()
 
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
